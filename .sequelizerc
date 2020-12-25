@@ -1,0 +1,10 @@
+require('@babel/register')({
+    extensions: [".es6", ".es", ".jsx", ".js", ".mjs", ".ts"],
+});
+
+module.exports = {
+    'config': './server/src/app/database/database.config.ts',
+    'migrations-path': './server/src/app/database/migrations',
+    'seeders-path': './server/src/app/database/seeders',
+    'models-path': './server/src/app/database/models',
+}
